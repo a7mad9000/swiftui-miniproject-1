@@ -17,7 +17,7 @@ struct ContentView: View {
                     VStack{
                     List(bikes){ bike in
                         NavigationLink(
-                            destination: /*@START_MENU_TOKEN@*/Text("Destination")/*@END_MENU_TOKEN@*/,
+                            destination: bikeListR(B: bike),
                             label: {
                                 B_row(bike: bike)       })
                     }.navigationTitle("تأجير الدراجات")
