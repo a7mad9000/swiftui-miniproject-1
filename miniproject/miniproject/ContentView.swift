@@ -11,8 +11,7 @@ struct ContentView: View {
     var c=1
     var body: some View {
         NavigationView{
-            ScrollView{
-                LazyVStack(){
+                VStack(){
                     Text("مرحباً بك ،، يمكنك اختيار الدراجة المناسبة لك من القائمة وأكمل بياناتك للحجز")
                     VStack{
                     List(bikes){ bike in
@@ -24,7 +23,6 @@ struct ContentView: View {
                     }
                 }
             }
-        }
     }
 }
 
